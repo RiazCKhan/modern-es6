@@ -6,21 +6,24 @@ and make sure you can query where each character is.
 */
 
 class Character {
-  constructor( id, name, x, y ) {
-     //Write your code here
-}
+  constructor(id, name, x, y) {
+    //Write your code here
+  }
 
-get position() {
-  //Write your code here
-}
+  get position() {
+    //Write your code here
+  }
 }
 
 //Define Player Character and NonPlayerCharacter classes here
+class PlayerCharacter extends Character{ }
 
-function createPlayer( id, name ) {
-//Write your code here
+class NonPlayerCharacter extends Character{ }
+
+function createPlayer(id, name) {
+  //Write your code here
 }
 
-function createNonPlayer( id, name ) {
-//Write your code here
+function createNonPlayer(id, name) {
+  //Write your code here
 }

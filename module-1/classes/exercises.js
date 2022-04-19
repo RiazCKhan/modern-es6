@@ -19,14 +19,16 @@ class Character {
 }
 
 //Define Player Character and NonPlayerCharacter classes here
-class PlayerCharacter extends Character{ }
+class PlayerCharacter extends Character { }
 
-class NonPlayerCharacter extends Character{ }
+class NonPlayerCharacter extends Character { }
 
 function createPlayer(id, name) {
-  //Write your code here
+  let x = Math.floor(Math.random() * 10), y = Math.floor(Math.random() * 10);
+  return new PlayerCharacter(id, name, x, y);
 }
 
 function createNonPlayer(id, name) {
-  //Write your code here
+  let x = Math.floor(Math.random() * 10), y = Math.floor(Math.random() * 10);
+  return new NonPlayerCharacter(id, name, x, y);
 }

@@ -7,7 +7,10 @@ and make sure you can query where each character is.
 
 class Character {
   constructor(id, name, x, y) {
-    //Write your code here
+    this.id = id;
+    this.name = name;
+    this.x = x;
+    this.y = y;
   }
 
   get position() {

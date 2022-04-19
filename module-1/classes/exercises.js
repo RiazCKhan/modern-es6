@@ -14,7 +14,7 @@ class Character {
   }
 
   get position() {
-    //Write your code here
+    return { x: this.x, y: this.y };
   }
 }
 

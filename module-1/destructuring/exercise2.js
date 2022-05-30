@@ -10,7 +10,7 @@ function fib( n ) {
   if ( n <= 1 ) return n; 
 
   for ( let fibIndex = 1; fibIndex < n; ++fibIndex ) {
-      // Insert one destructuring expression here
+    [fibCurrent, fibLast] = [fibCurrent + fibLast, fibCurrent];
   }
 
   return fibCurrent;
